@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    
+</head>
+<body>
+  <form method="get" action="get">
+        <label>Nom</label> : <input type="text" name="nom" 
+        required
+        minlength="4" maxlength="6" size="10">
+        <p>
+        <label>Prénom</label> : <input type="text" name="prenom">
+        </p>
+        <p>
+            <label>Age</label> : <input type="number">
+        </p>
+        <p>
+            <label for="Sexe">Sexe</label> 
+            <select name="Sexe" id="Sexe">
+             <option value="Masculin">Masculin</option>
+             <option value="Feminin">Feminin</option>
+            </select>
+        </p>
+        <p>
+            <label for="Adresse_Mail" id="Adresse_Mail">Adresse Mail</label> : <input type="email" id="email">
+        </p>
+        <p>
+            <label>Adresse Postale</label> : <input type="text">
+        </p>
+        <p>
+            <label>Code Postale</label> : <input type="number">
+        </p>
+        <p>
+            <label>Ville</label> : <input type="text">
+        </p>
+        
+            <label>Metier exerce</label>
+            <div>
+                <input type="radio" id="Developper"  name="Metier_exerce" value="Developper"> <label>Developper</label><br>
+            </div>
+            <div>
+                <input type="radio" name="Metier_exerce"> <label>Chef de Projet</label><br>
+            </div>
+            <div>
+                <input type="radio" id="Integrateur" name="Metier_exerce" value="Integrateur"> <label for="Integrateur">Integrateur</label><br>
+            </div>
+        
+        <p>
+            <label>Nationalite
+               <select name="pays"> 
+
+                <option value="None" selected="selected">None</option>
+                <option value="France">France </option>
+                <option value="Afghanistan">Afghanistan </option>
+                <option value="Afrique_Centrale">Afrique_Centrale </option>
+                <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                <option value="Cameroun">Cameroun </option>
+                <option value="Algerie">Algerie </option>
+                <option value="Allemagne">Allemagne </option>
+                <option value="Andorre">Andorre </option>
+                <option value="Angola">Angola </option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>Pays de Naissance
+                <select name="pays" id="pays">
+                <option value="None" selected="selected">None</option>
+                <option value="France">France </option>
+                <option value="Afghanistan">Afghanistan </option>
+                <option value="Afrique_Centrale">Afrique_Centrale </option>
+                <option value="Afrique_du_sud">Afrique_du_Sud </option> 
+                <option value="Cameroun">Cameroun </option>
+                <option value="Algerie">Algerie </option>
+                <option value="Allemagne">Allemagne </option>
+                <option value="Andorre">Andorre </option>
+                <option value="Angola">Angola </option>
+
+                </select>
+            </label>
+        </p>
+
+     <p>
+            <label>Date de Naissance: <input type="date" name="bday" id="bday">
+            </label>
+    </p>
+    <p>
+        <label>Numero de securite Sociale</label> : <input type="number">
+    </p>
+    <p>
+        <label>Numero de Passeport</label> : <input type="text">
+    </p>
+    <p>
+        <label>Date de Delivrance du Passeport</label> : <input type="date">
+    </p>
+    <p>
+        <label>Date de validite du Passeport</label> : <input type="date">
+    </p>
+
+  </form>
+</body>
+</html>
